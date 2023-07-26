@@ -1,0 +1,140 @@
+<html lang="en">
+  <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+          <meta name="theme-color" content="#f2f2f2">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <title>Again App</title>
+          <meta property="og:title" content="site">
+          <meta property="og:description" content="An app use for your Self Discovery.">
+          <meta property="og:image" content="img/banner.png">
+          <meta name="twitter:card" content="Use for your Self Discovery, and write your daily routine or status.">
+          <meta name="twitter:title" content="Again App it!">
+          <meta name="twitter:description" content="Again - An app use for your Discovering about your Self.">
+          <meta name="twitter:image" content="img/banner.png">
+          <meta name="twitter:image:alt" content="banner name">
+      
+      <meta property="title" content="It's Okay">
+      <meta property="author" content="Again App by IIan Laucsap Cruz">
+      <meta property="image" content="/img/banner.png">
+      <meta property="description" content="Get to know your self, Write your mood and Thinking. We hope this leesen the heavyweight inside your feeling.">
+          
+      <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon"> 
+      
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+<link rel="stylesheet"
+href="https://atstem.github.io/just.css/just.css"/>
+
+<link rel="stylesheet"
+href="custom.css"/>
+
+  </head>
+
+  <body class="">
+  
+<bg class="">
+</bg>
+    
+<div class='fsrc float abg '
+id="logoscreen"> 
+
+<span class="g mid material-symbols-rounded">
+psychiatry
+</span>
+
+<p class='mid g comfort '>
+again
+ </p>
+</div>
+
+<section id="ree" class=" ">
+
+<div class='hero col'>
+
+<div class='cont abg col '>
+<span class='row '>
+
+<p class='mid comfort g'>
+diary</p>
+ <span class="g mid
+material-symbols-rounded">
+auto_stories
+</span> 
+ 
+
+</span>
+
+<div class='input as'>
+<span class="material-symbols-rounded">
+calendar_month
+</span>
+<input type="date" class="atxt as"
+ id="myDate" placeholder="01-19-2023"
+value=""
+
+onchange="
+
+diaryDate = document.getElementById('myDate');
+diaryOfme = document.getElementById('diaryOfme');
+
+diaryOfme.value = localStorage.getItem(diaryDate.value);
+
+">
+
+</div>
+
+<div class="social as ">
+
+<textarea onchange="
+
+diaryDate = document.getElementById('myDate');
+diaryOfme = document.getElementById('diaryOfme');
+
+localStorage.setItem(diaryDate.value, diaryOfme.value);
+
+diaryOfme.value = localStorage.getItem(diaryDate.value);
+
+
+"
+class="as atxt" id="diaryOfme"
+placeholder="What do you feel right now?" style="height:25em;" >
+</textarea>
+
+</div>
+
+</div>
+ 
+<nav class='foot float abg gridby2 '>
+
+<a class='btn gbg '>
+
+       <span class='material-symbols-rounded '>
+auto_stories
+</span>
+
+ </a>
+
+<a class='btn ' href="https://againapp.github.io">
+
+       <span class='material-symbols-rounded'>
+apps
+</span>
+
+ </a>
+
+</nav>
+
+</section>
+
+    <script src="https://atstem.github.io/just.css/just.js" >
+</script>
+    
+  </body>
+  </html> 
+
+
+ 
