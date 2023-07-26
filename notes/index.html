@@ -31,9 +31,8 @@ href="https://atstem.github.io/just.css/just.css"/>
 
 <link rel="stylesheet"
 href="custom.css"/>
-
   </head>
-
+ 
   <body class="">
   
 <bg class="">
@@ -59,29 +58,34 @@ again
 <span class='row '>
 
 <p class='mid comfort g'>
-diary</p>
+notes</p>
  <span class="g mid
 material-symbols-rounded">
-auto_stories
+sticky_note_2
 </span> 
  
 
 </span>
 
+
 <div class='input as'>
 <span class="material-symbols-rounded">
-calendar_month
+sticky_note_2
 </span>
-<input type="date" class="atxt as"
- id="myDate" placeholder="01-19-2023"
+<input type="" class="atxt as"
+ id="myNote" placeholder="Your Note"
 value=""
 
 onchange="
 
-diaryDate = document.getElementById('myDate');
-diaryOfme = document.getElementById('diaryOfme');
+mynote = document.getElementById('myNote');
+noteslist = document.getElementById('notelist');
+notesOfme = document.getElementById('notesOfme');
 
-diaryOfme.value = localStorage.getItem(diaryDate.value);
+notesOfme.value = localStorage.getItem(mynote.value);
+
+localStorage.setItem('noteslist', `${mynote.value} | ${localStorage.getItem('noteslist') }`);
+noteslist.value = localStorage.getItem('noteslist');
 
 ">
 
@@ -91,20 +95,27 @@ diaryOfme.value = localStorage.getItem(diaryDate.value);
 
 <textarea onchange="
 
-diaryDate = document.getElementById('myDate');
-diaryOfme = document.getElementById('diaryOfme');
+mynote = document.getElementById('myNote');
+notesOfme = document.getElementById('notesOfme');
 
-localStorage.setItem(diaryDate.value, diaryOfme.value);
+localStorage.setItem(mynote.value, notesOfme.value);
 
-diaryOfme.value = localStorage.getItem(diaryDate.value);
+notesOfme.value = localStorage.getItem(notesDate.value);
+
 
 
 "
-class="as atxt" id="diaryOfme"
-placeholder="What do you feel right now?" style="height:25em;" >
+class="as atxt" id="notesOfme"
+placeholder="What is in your mind right now?" style="height:25em;" >
 </textarea>
 
 </div>
+
+<div class='cont '>
+<input id="notelist" 
+disabled
+class='abg small '>
+ </div>
 
 </div>
  
@@ -113,7 +124,7 @@ placeholder="What do you feel right now?" style="height:25em;" >
 <a class='btn gbg '>
 
        <span class='material-symbols-rounded '>
-auto_stories
+sticky_note_2
 </span>
 
  </a>
