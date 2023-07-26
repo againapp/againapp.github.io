@@ -1,0 +1,126 @@
+/*   
+
+Owned By Actwu / IIan Laucsap Cruz
+
+This is a digital property copyrighted under iian's name
+
+*/
+
+* {
+--text: hsl(0, 4%, 95%);
+color:var(--text);;
+--background: hsl(240, 12%, 11%);
+--secondary: hsl(240, 14%, 22%);
+
+}
+
+p,*.atxt,p{
+color: var(--text);
+word-break: break-all;
+}
+
+::placeholder,input::placeholder {
+color:hsl(250, 10%, 40%);
+}
+
+*.as2,.as2,.social.as2,.social.as2 textarea,.as2.input,.as2.input *:not(p) {
+background-color:hsl(250, 10%, 40%);
+}
+
+.ab {
+color:var(--background);
+}
+
+bg,.abg{
+background-color:var(--background);
+}
+
+*.as,.as,.social.as,.social.as textarea,.as.input,.as.input *:not(p) {
+background-color:var(--secondary);
+}
+
+.asol {
+outline:  var(--secondary) solid 2px;
+}
+
+.material-symbols-rounded {
+  
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48
+}
+
+
+#logoscreen {
+top: 0px;
+right: 0px;
+left: 0px;
+bottom: 0px;
+width: 0%;
+height: 0%;
+z-index: 0;
+position: fixed;
+font-size: .3in;
+size: 0%;
+opacity:0%;
+
+animation: logoscreen 2s;
+
+display: grid;
+place-content: center;
+justify-content: center;
+flex-wrap: wrap;
+overflow-y: scroll;
+
+}
+
+#logoscreen * {
+display: grid;
+place-content: center;
+justify-content: center;
+flex-wrap: wrap;
+z-index: 2;
+animation: fade 2s;
+}
+
+@keyframes fade {
+from { opacity:0%; }
+to { opacity:100%;}
+}
+
+@keyframes logoscreen {
+0% {
+z-index: 4;
+width: auto;
+height: auto;
+opacity: 100%;
+size: auto;
+}
+
+ 30% {
+width: auto;
+height: auto;
+opacity: 100%;
+size: auto;
+}
+
+50% {
+
+width: auto;
+height: auto;
+opacity: 100%;
+size: auto;
+}
+
+100% {
+z-index: 4;
+width: auto;
+height: auto;
+opacity: 0%;
+size: auto;
+}
+
+}
+
