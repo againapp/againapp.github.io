@@ -1,0 +1,112 @@
+
+  
+<html lang="en">
+  <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+          <meta name="theme-color" content="#f2f2f2">
+          <meta name="apple-mobile-web-app-capable" content="yes">
+          <title>Again</title>
+          <meta property="og:title" content="Again App">
+          <meta property="og:description" content="An app use for your Self Discovery.">
+          <meta property="og:image" content="https://againapp.github.io/img/banner.png">
+          <meta name="twitter:card" content="Use for your Self Discovery, and write your daily routine or status.">
+          <meta name="twitter:title" content="Rethink it!">
+          <meta name="twitter:description" content="Again - An app use for your Discovering about your Self.">
+          <meta name="twitter:image" content="https://againapp.github.io/img/banner.png">
+          <meta name="twitter:image:alt" content="Self Discovery!">
+      
+      <meta property="title" content="It's Okay">
+      <meta property="author" content="Again">
+      <meta property="image" content="https://againapp.github.io/img/banner.png">
+      <meta property="description" content="Get to know your self, Write your mood and Thinking. We hope this leesen the heavyweight inside your feeling.">
+          
+      <link rel="shortcut icon" href="https://againapp.github.io/img/icon.png" type="image/x-icon"> 
+
+      <link rel="stylesheet" href="https://atstem.github.io/just.css/just.css"/>
+      <link rel="stylesheet" href="https://atstem.github.io/just.css/anim.css"/>
+      <link rel="stylesheet" href="https://atstem.github.io/just.css/fonts.css"/>
+      
+       <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"/>
+
+      </head>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <style> .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp { font-variation-settings: 'FILL' 1,'wght' 500,'GRAD' 200, 'opsz' 48 } </style>
+  <body>
+
+<bg style ='background: #000'> </bg>
+  
+<nav style ='background: #000' class='head sol sticky top '>
+<span class='item-left cont '>
+<p class=' pop w '> again. </p>
+</span>
+</nav>
+
+<div class='hero small '> </div>
+
+<div id="emo" class='hero small center '>
+<p class='mid pop w '>What do you feel? </p>
+<span class=' left left'>
+<a onclick='to(sadoff,sadon); localStorage.setItem("emoRec","sad                       |" + localStorage.getItem("emoRec")); ' id="sadoff" class='btn sol cont '>
+       <p class='pop s mid '>sad.</p>
+</a>
+
+ <a onclick='to(sadon, sadoff); localStorage.setItem("emoRec","                        |" + localStorage.getItem("emoRec")); ' id="sadon" class='btn hide wol cont '>
+       <p class='pop w mid '> sad. </p>
+ </a>
+
+ <a onclick='to(happyoff,happyon); localStorage.setItem("emoRec","happy                       |" + localStorage.getItem("emoRec"));' id="happyoff" class='btn sol cont '>
+       <p class='pop s mid '>happy.</p>
+</a>
+
+ <a onclick='to(happyon, happyoff); localStorage.setItem("emoRec","                        |" + localStorage.getItem("emoRec"));' id="happyon" class='btn hide wol cont '>
+       <p class='pop w mid '> happy. </p>
+ </a>
+
+<a onclick='to(angryoff,angryon); localStorage.setItem("emoRec","angry                       |" + localStorage.getItem("emoRec"));' id="angryoff" class='btn sol cont '>
+       <p class='pop s mid '>angry.</p>
+</a>
+
+ <a onclick='to(angryon, angryoff); localStorage.setItem("emoRec","                        |" + localStorage.getItem("emoRec"));' id="angryon" class='btn hide wol cont '>
+       <p class='pop w mid '> angry. </p>
+ </a>
+
+<a onclick='to(calm,calmon); localStorage.setItem("emoRec","calm                       |" + localStorage.getItem("emoRec"));' id="calm" class='btn sol cont '>
+       <p class='pop s mid '>calm.</p>
+</a>
+
+ <a onclick='to(calmon, calm); localStorage.setItem("emoRec","                        |" + localStorage.getItem("emoRec"));' id="calmon" class='btn hide wol cont '>
+       <p class='pop w mid '> calm. </p>
+ </a>
+</span>
+ 
+ </div>
+
+<div id="rec" class='center hero '> 
+
+<p id="rectext" class='w pop big  '> </p>
+</div>
+
+<nav style ='background: #000' class="foot  float">
+<div class=' left small '>
+<a onclick='to(emo, rec); to(recbtn,emobtn); document.querySelector("#rectext").innerText = localStorage.getItem("emoRec"); ' id="recbtn" class='btn   '>
+       <p class='pop w big '> > </p>
+ </a>
+<a onclick='to(rec, emo); to(emobtn,recbtn); getLocal("emoRec")' id="emobtn" class='btn hide  '>
+       <p class='pop w big '> < </p>
+ </a>
+
+ </div>
+</nav>
+
+   <script src="https://atstem.github.io/just.css/just.js">
+  </script> 
+  
+  </body>
+  </html>
