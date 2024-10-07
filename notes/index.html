@@ -34,7 +34,7 @@
  id="myNote" placeholder="Title"
 value=""
 
-onchange="
+oninput="
 
 noteDate = document.getElementById('myNote');
 noteOfme = document.getElementById('noteOfme');
@@ -43,7 +43,7 @@ noteOfme.value = localStorage.getItem(noteDate.value);
 
 "></textarea>
 
-<textarea big onchange="
+<textarea big oninput="
 
 noteDate = document.getElementById('myNote');
 noteOfme = document.getElementById('noteOfme');
