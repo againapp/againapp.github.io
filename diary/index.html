@@ -34,7 +34,7 @@
  id="myDate" placeholder="01-19-2023"
 value=""
 
-onchange="
+oninput="
 
 diaryDate = document.getElementById('myDate');
 diaryOfme = document.getElementById('diaryOfme');
@@ -43,7 +43,7 @@ diaryOfme.value = localStorage.getItem(diaryDate.value);
 
 "></textarea>
 
-<textarea big onchange="
+<textarea big oninput="
 
 diaryDate = document.getElementById('myDate');
 diaryOfme = document.getElementById('diaryOfme');
